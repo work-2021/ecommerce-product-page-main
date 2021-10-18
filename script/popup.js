@@ -66,7 +66,6 @@ closePopup.onclick = () => {
 };
 ss.forEach((el) => {
   el.addEventListener('click',(e) => {
-    console.log(e.target);
     layerPopup.classList.add('open');
   });
 });
