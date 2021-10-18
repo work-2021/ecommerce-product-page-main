@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/main.css" />
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <div class="layerNav"></div>
+  <div class="layer">
+    <div class="slider">
+      <div class="img-content">
+        <img class="show" src="./images/image-product-1.jpg" alt="image 1" />
+        <img src="./images/image-product-2.jpg" alt="image 2" />
+        <img src="./images/image-product-3.jpg" alt="image 3" />
+        <img src="./images/image-product-4.jpg" alt="image 4" />
+      </div>
+      <div class="control">
+        <ul id="myUlLayer"></ul>
+        <button class="disable" id="prevLayer">
+          <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd" /></svg>
+        </button>
+        <button id="closeLayer">
+          <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+            <path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill-rule="evenodd" /></svg>
+        </button>
+        <button id="nextLayer">
+          <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd" /></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <header>
+    <nav>
+      <img src="./images/icon-menu.svg" alt="menu icon" />
+      <img src="./images/logo.svg" alt="logo icon" />
+      <div class="bullets">
+        <img src="./images/icon-close.svg" alt="icon close" />
+        <ul>
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="account">
+        <img src="./images/icon-cart.svg" alt="cart icon" />
+        <span>0</span>
+        <img src="./images/image-avatar.png" alt="image avatar" />
+      </div>
+      <div class="show-cart">
+        <h3>Cart</h3>
+        <hr />
+        <div class="sp">
+          <div class="info-cart">
+            Your Cart is Empty.
+          </div>
+        </div>
+    </nav>
+  </header>
+  <section>
+    <div class="slider">
+      <div class="img-content">
+        <img class="show" src="./images/image-product-1.jpg" alt="image 1" />
+        <img src="./images/image-product-2.jpg" alt="image 2" />
+        <img src="./images/image-product-3.jpg" alt="image 3" />
+        <img src="./images/image-product-4.jpg" alt="image 4" />
+      </div>
+      <div class="control">
+        <ul id="myUl"></ul>
+        <button class="disable" id="prev">
+          <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd" /></svg>
+        </button>
+        <button id="next">
+          <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd" /></svg>
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="product">
+        <span>Sneaker Company</span>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      </div>
+      <div class="cart">
+        <div class="count">
+          <span id="final"></span>
+          <span id="disaccount">50%</span>
+          <span id="orginial">$250.00</span>
+        </div>
+        <div class="num-product">
+          <img id="minus" src="./images/icon-minus.svg" alt="minus icon" />
+          <span id="count">0</span>
+          <img id="plus" src="./images/icon-plus.svg" alt="plus icon" />
+        </div>
+        <button id="addToCart">
+          <img src="./images/icon-cart-w.svg" alt="cart icon" />
+          <span>Add to cart</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Abdullah Alnoime</a>.
+  </div>
+  <script src="./script/main.js"></script>
+  <script src="./script/popup.js"></script>
+</body>
+
+</html>
